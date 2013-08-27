@@ -33,21 +33,31 @@
   </head>
 
   <body>
-    <div class="navbar">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-narrow">
+        <div class="container">
           <a class="brand" href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}/images/expressio.jpg"/></a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li class="active"><a href="#home" class="scroll-page">Home</a></li>
+              <li><a href="#team" class="scroll-page">Time</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact" class="scroll-page">Contato</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container-narrow">
+    <section id="home" class="highlight">
+      <div class="container">
+        <div class="row">
+          <h2>Uma nova expressão em desenvolvimento de software e consultoria.</h2>
+        </div>
+      </div>
+    </section>
 
+    <div class="container">
       <div class="content">
         {{ content }}
       </div>
@@ -55,9 +65,10 @@
       <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
       </footer>
-
     </div>
 
     {% include JB/analytics %}
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/custom.js"></script>
   </body>
 </html>
