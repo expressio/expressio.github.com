@@ -1,29 +1,16 @@
 $(function() {
   // Smooth animation when page scrolls
-  $("a.scroll-page").scrollToSection();
-})(jQuery);
+  $("a.scroll-page").click(function (event) {
+    event.preventDefault();
+    event.stopPropagation();
 
-jQuery.fn.scrollToSection = function(settings) {
-  settings = jQuery.extend({
-    speed : 1100
-  }, settings);
+    var elementClick = $(this).attr("href"),
+        destination = $(elementClick).offset().top - 60;
 
-  return this.each(function(){
-    var caller = this;
+    if (elementClick == "#home") {
+      destination = 0;
+    }
 
-    $(caller).click(function (event) {
-      event.preventDefault();
-
-      var elementClick = $(caller).attr("href"),
-          destination = $(elementClick).offset().top;
-
-      // if (elementClick == "#home") {
-      //   destination = 0;
-      // }
-
-      $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1100);
-
-      return false;
-    });
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1100);
   });
-}
+});
