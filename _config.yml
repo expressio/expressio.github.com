@@ -3,7 +3,6 @@
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock"]
-auto: true
 pygments: true
 
 # Themes are encouraged to use these universal variables
@@ -15,7 +14,7 @@ author:
   name: Expressio
   email: contato@expressio.com.br
   github: expressio
-  twitter: expressio
+  twitter: expressio_soft
   feedburner: feedname
 
 # The production_url is only used when full-domain names are needed
