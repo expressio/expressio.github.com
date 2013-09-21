@@ -2,6 +2,16 @@ body {
   padding: 0;
 }
 
+.brand {
+  margin-top: 0px;
+  padding: 2px 20px 2px !important;
+}
+
+.brand img {
+  width: 300px;
+  height: 90px;
+}
+
 .page {
   padding-top: 40px;
 }
@@ -37,7 +47,14 @@ body {
 }
 
 .navbar .nav > li {
-  height: 60px;
+  height: 95px;
+  text-align: center;
+  width: 120px;
+}
+
+.navbar .nav > li > a {
+  font-size: 17px;
+  line-height: 65px;
 }
 
 .navbar .nav > .active > a,
@@ -45,11 +62,13 @@ body {
 .navbar .nav > .active > a:focus {
   color: #fff !important;
   background-color: #047AC3;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .navbar .nav > li.active{
   background-color: #047AC3;
-  opacity: 0.9;
   -webkit-transition: opacity 0.15s linear;
   -moz-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
@@ -63,6 +82,23 @@ body {
 
 .navbar .nav>li>a {
   text-shadow: none;
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-shadow {
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1) !important;
+  -moz-box-shadow: 0 1px 10px rgba(0,0,0,.1) !important;
+  box-shadow:0 1px 10px rgba(0,0,0,.1) !important;
+}
+
+.container section {
+  padding-top: 55px;
 }
 
 /* Custom container */
