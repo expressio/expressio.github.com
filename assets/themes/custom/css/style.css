@@ -28,7 +28,7 @@ body {
   background-color: #047AC3;
   margin-top: 3px;
   height: 440px;
-  width: 1440px;
+  width: 100%;
 }
 
 .highlight .container .row h2 {
