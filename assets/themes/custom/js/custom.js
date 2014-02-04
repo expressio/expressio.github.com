@@ -6,7 +6,7 @@ $(function() {
 
     var self = $(this),
         elementClick = self.attr("href"),
-        destination = $(elementClick).offset().top - 60,
+        destination = $(elementClick).offset().top - 8,
         navbar = $('.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner');
 
     if (elementClick == "#home") {
