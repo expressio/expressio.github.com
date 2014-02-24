@@ -171,3 +171,34 @@ body {
 
 .navbar-inner {
   background: #fff; }
+
+.contact_box {
+  background-color: #11406F;
+  margin-top: 20px;
+  height: 65px;
+  width: 100%;
+  color:#EEE; }
+
+.contact_box .container {
+  padding-top: 20px; }
+
+.contact_box ul {
+  list-style: none outside none;
+  float: right; }
+
+.contact_box li {
+  display: inline-block; }
+
+.contact_box a {
+  color: #EEE;
+  text-decoration: none; }
+
+.contact_box a:hover {
+  text-decoration: underline;  
+}
+
+footer {
+  background-color: #0B3155;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #EEE; }
