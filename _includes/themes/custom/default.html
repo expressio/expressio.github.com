@@ -62,11 +62,24 @@
       <div class="content">
         {{ content }}
       </div>
-      <hr>
-      <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
-      </footer>
     </div>
+
+    <section id="contact" class="contact_box">
+      <div class="container">
+        <span>Email: <a href="mailto:contato@expressio.com.br">contato@expressio.com.br</a></span>
+        <ul>
+          <li><a href="https://twitter.com/expressio_sw"><img src="{{ ASSET_PATH }}/images/twitter.png"></a></li>
+          <li><a href="http://www.linkedin.com/company/expressio"><img src="{{ ASSET_PATH }}/images/linkedin.png"></a></li>
+          <li><a href="https://github.com/expressio"><img src="{{ ASSET_PATH }}/images/github.png"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+      </div>
+    </footer>
 
     {% include JB/analytics %}
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.7.2.min.js"></script>
