@@ -1,21 +1,24 @@
-Expressio site
+# Expressio site
 
-# Adding content
+## Adding content
 
-## Create new pages
+### Create new pages
 
-$ rake page name="newpage"
-$ rake page name="section/new-page"
+	$ rake page name="newpage"
 
-# Thanks / Credit
+Or
+	
+	$ rake page name="section/new-page"
+
+## Thanks / Credit
 
 This is a Jekyll site, using (Twitter) Bootstrap via Jekyll Bootstrap. This repository can be rebased in future against https://github.com/plusjade/jekyll-bootstrap.
 
-# Current dependencies
+## Current dependencies
 
-https://github.com/plusjade/jekyll-bootstrap - version 0.3.0
+[https://github.com/plusjade/jekyll-bootstrap]() - version 0.3.0
 
-# License
+## License
 
 Text and images, unless otherwise stated, are copyright Expressio. All rights reserved.
 
